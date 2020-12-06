@@ -1,39 +1,56 @@
 <template>
   <ion-page>
-    <ion-tabs>
+    <ion-tabs >
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="tab1" href="/tabs/tab1">
-          <ion-icon :icon="triangle" />
-          <ion-label>Tab 1</ion-label>
-        </ion-tab-button>
-          
-        <ion-tab-button tab="tab2" href="/tabs/tab2">
-          <ion-icon :icon="ellipse" />
-          <ion-label>Tab 2</ion-label>
-        </ion-tab-button>
-        
-        <ion-tab-button tab="tab3" href="/tabs/tab3">
-          <ion-icon :icon="square" />
-          <ion-label>Tab 3</ion-label>
-        </ion-tab-button>
+
+          <ion-tab-button
+                  v-if="loggato"
+                  class="ion-margin"
+                  expand="full"
+                  color="danger"
+                  @click="logout"
+          >
+              <ion-icon color="danger" :icon="triangle" />
+              <ion-label color="danger">Logout</ion-label>
+          </ion-tab-button>
+
       </ion-tab-bar>
     </ion-tabs>
   </ion-page>
 </template>
 
-<script lang="ts">
+<script>
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage } from '@ionic/vue';
 import { ellipse, square, triangle } from 'ionicons/icons';
-
+import router from '../router/index'
 export default {
   name: 'Tabs',
   components: { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage },
+
   setup() {
     return {
       ellipse, 
       square, 
       triangle,
     }
-  }
+  },
+
+    computed:{
+      loggato(){
+          return localStorage.getItem('user') ? true : false
+      }
+    },
+
+    methods:{
+        async logout() {
+            localStorage.clear()
+            router.push("/")
+            setTimeout(() => {
+                console.log('Async operation has ended');
+                location.reload()
+            }, 1000);
+
+        },
+    }
 }
 </script>
