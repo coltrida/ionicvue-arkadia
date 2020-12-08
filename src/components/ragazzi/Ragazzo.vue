@@ -2,16 +2,17 @@
     <ion-item>
         <ion-grid>
             <ion-row class="ion-justify-content-between ion-align-items-center">
-                <ion-col size="6">
+                <ion-col size="4">
                     <ion-label>{{dati.name}}</ion-label>
                 </ion-col>
-                <!--<ion-col size="4">
-                    <ion-button>
-                        Modifica
-                        <ion-icon slot="end" name="pencil"></ion-icon>
-                    </ion-button>
-                </ion-col>-->
-                <ion-col size="6">
+                <ion-col size="2">
+                    <ion-label>{{dati.voucher}}</ion-label>
+                </ion-col>
+                <ion-col size="3">
+                    <ion-label>{{dati.scadenza}}</ion-label>
+                </ion-col>
+
+                <ion-col size="3">
                     <ion-button color="danger" @click="elimina(dati.id)">
                         Elimina
                         <ion-icon slot="end" name="trash"></ion-icon>

@@ -86,7 +86,7 @@
                     expand="full"
                     size="large"
                     v-show="role"
-                    @click="statistiche"
+                    href="tabs/statistiche"
             >Statistiche
             </ion-button>
 
@@ -120,25 +120,6 @@
                 return "https://www.andirivieni.eu/img/" + this.id + ".jpg"
             }
         },
-
-        methods: {
-
-            presenzeRagazzi() {
-                console.log('presenze')
-            },
-
-            presenzeOperatore() {
-                console.log('operatore')
-            },
-
-            inserisciKm() {
-                console.log('km')
-            },
-
-            statistiche() {
-                console.log('stat')
-            }
-        }
     }
 </script>
 

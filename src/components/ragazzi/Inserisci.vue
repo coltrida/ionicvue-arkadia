@@ -19,6 +19,17 @@
 
         <form-inserisci></form-inserisci>
 
+        <ion-item color="success">
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="4">Nome</ion-col>
+                    <ion-col size="2">Vouc.</ion-col>
+                    <ion-col size="3">Scadenza</ion-col>
+                    <ion-col size="3"></ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+
         <ion-content>
             <div id="container" v-if="load">
                 <ion-spinner id="spinner" name="bubbles"></ion-spinner>

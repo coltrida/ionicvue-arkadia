@@ -14,7 +14,16 @@ const help = () => {
         linkattivitacliente: 'http://statistichearkadia.local/api/attivita/ragazzo',
         linkassociaattivitacliente: 'http://statistichearkadia.local/api/attivita/ragazzo/associa',
         linkassociazioni: 'http://statistichearkadia.local/api/associazioni',
+        linkstatistichepresenzeragazzi: 'http://statistichearkadia.local/api/statistiche/presenzeRagazzi',
+        linkstatistichepresenzeoperatori: 'http://statistichearkadia.local/api/statistiche/presenzeOperatori',
+        linksettimanaattuale: 'http://statistichearkadia.local/api/statistiche/settimanaAttuale',
+        linkmeseattuale: 'http://statistichearkadia.local/api/statistiche/meseAttuale',
+        linkannoattuale: 'http://statistichearkadia.local/api/statistiche/annoAttuale',
+        linkchilometrivetture: 'http://statistichearkadia.local/api/statistiche/chilometriVetture',
+        linkchilometriragazzi: 'http://statistichearkadia.local/api/statistiche/chilometriRagazzi',
+
 /*
+
         linkragazzi: 'https://www.andirivieni.eu/api/ragazzi',
         linkattivita: 'https://www.andirivieni.eu/api/attivita',
         linkvetture: 'https://www.andirivieni.eu/api/vetture',
@@ -29,7 +38,15 @@ const help = () => {
         linkattivitacliente: 'https://www.andirivieni.eu/api/attivita/ragazzo',
         linkassociaattivitacliente: 'https://www.andirivieni.eu/api/attivita/ragazzo/associa',
         linkassociazioni: 'https://www.andirivieni.eu/api/associazioni',
-        */
+        linkstatistichepresenzeragazzi: 'https://www.andirivieni.eu/api/statistiche/presenzeRagazzi',
+        linkstatistichepresenzeoperatori: 'https://www.andirivieni.eu/api/statistiche/presenzeOperatori',
+        linksettimanaattuale: 'https://www.andirivieni.eu/api/statistiche/settimanaAttuale',
+        linkmeseattuale: 'https://www.andirivieni.eu/api/statistiche/meseAttuale',
+        linkannoattuale: 'https://www.andirivieni.eu/api/statistiche/annoAttuale',
+        linkchilometrivetture: 'https://www.andirivieni.eu/api/statistiche/chilometriVetture',
+        linkchilometriragazzi: 'https://www.andirivieni.eu/api/statistiche/chilometriRagazzi',
+
+*/
     };
 };
 export default help;

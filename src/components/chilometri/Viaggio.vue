@@ -68,5 +68,7 @@
 </script>
 
 <style scoped>
-
+    ion-avatar{
+        width: 100px;
+    }
 </style>

@@ -48,6 +48,26 @@ const routes: Array<RouteRecordRaw> = [
                 path: 'associaAttivitaRagazzo',
                 component: () => import('@/components/attivita/AssociaRagazzi.vue')
             },
+            {
+                path: 'statistiche',
+                component: () => import('@/components/statistiche/Index.vue')
+            },
+            {
+                path: 'statistichePresenzeRagazzi',
+                component: () => import('@/components/statistiche/presenzeragazzi/Index.vue')
+            },
+            {
+                path: 'statistichePresenzeOperatori',
+                component: () => import('@/components/statistiche/presenzeoperatori/Index.vue')
+            },
+            {
+                path: 'statisticheChilometriVetture',
+                component: () => import('@/components/statistiche/chilometrivetture/Index.vue')
+            },
+            {
+                path: 'statisticheChilometriRagazzi',
+                component: () => import('@/components/statistiche/chilometriragazzi/Index.vue')
+            },
         ]
     }
 ]

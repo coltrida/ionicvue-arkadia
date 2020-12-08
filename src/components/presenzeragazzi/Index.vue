@@ -46,6 +46,11 @@
                 <ion-item></ion-item>
                 <ion-item></ion-item>
                 <ion-item></ion-item>
+                <ion-item></ion-item>
+                <ion-item></ion-item>
+                <ion-item></ion-item>
+                <ion-item></ion-item>
+                <ion-item></ion-item>
             </ion-list>
 
         </ion-content>
